@@ -41,12 +41,17 @@ WASD, arrow keys, mouse or scroll wheel, with adjustable speed and threshold.
 
 ![Sticks](images/en-05-sticks.jpg)
 
+### Other controllers too
+- Controllers macOS recognizes work with their standard buttons.
+- Wired Xbox One / Series and Xbox 360 controllers (including the Xbox 360 wireless receiver) and wired PS3 controllers work even though macOS doesn't recognize them. Many other USB and Bluetooth gamepads work too.
+- Buttons line up wrong? Select the key on the model, click Match… and press the button, or press each button once in Set Up Buttons. The layout is remembered for each controller.
+- The back paddles, L4 / R4 and mode detection are made for the controller above.
+
 ### Also
 - Map to keyboard keys, left or right click, double-click, or a macro
 - Key repeat that behaves like a real keyboard
 - Profiles for different games, switchable from the menu bar
 - Knows the controller's modes: D mode (recommended) has every button except Capture; S mode has Capture and HOME but no L4 / R4 / PL / PR; X mode isn't supported yet
-- Other controllers: those macOS recognizes work with their standard buttons. Wired Xbox One / Series, Xbox 360 and PS3 controllers and many other gamepads work too, and Match… fixes any button that lines up wrong
 - No data collected, no network connections
 - English and Simplified Chinese · macOS 13 or later
 
@@ -79,11 +84,16 @@ WASD、方向键、鼠标或滚轮，速度和灵敏度都能调。
 
 ![摇杆](images/zh-05-sticks.jpg)
 
+### 其他手柄也能用
+- macOS 认得的手柄都能用，支持标准按键。
+- macOS 自己不认的有线手柄也能用：Xbox One / Series、Xbox 360 手柄（包括 Xbox 360 无线接收器），以及有线 PS3 手柄。很多其他 USB、蓝牙手柄也能用。
+- 按键对不上？在模型上选中那个键，点「匹配…」再按一下手柄上的键；或者在「设置按键」里依次按一遍。每种手柄的按键对应都会记住。
+- 背键、L4 / R4 和模式识别是专为上面这款手柄做的。
+
 ### 其他
 - 可以映射成键盘按键、鼠标左键 / 右键、鼠标双击，或者一段宏
 - 长按连发和真键盘一样
 - 不同游戏用不同的键位方案，在菜单栏里就能切换
 - 认得手柄的连接模式：D 模式（推荐）除了截图键都能用；S 模式截图键、HOME 能用，但没有 L4 / R4 / PL / PR；X 模式暂不支持
-- 其他手柄：macOS 认得的都能用，支持标准按键；有线 Xbox One / Series、Xbox 360、PS3 手柄和很多其他手柄也能用，按键对不上的可以用「匹配」改
 - 不收集任何数据，不联网
 - 中文、英文界面 · macOS 13 及以上
