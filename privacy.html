@@ -54,12 +54,13 @@
       <li>Your settings and profiles are saved only on your Mac, inside the app's own container. Deleting that folder removes them.</li>
       <li>When you assign a key or start macro recording, the app captures key events entered in its own windows only. Macro recording captures key presses, releases and timing until you stop recording. Saved key assignments and macros are kept in your local profiles and are never sent off your Mac.</li>
       <li>The app reads your game controller's input (buttons, sticks and battery level) only to perform your mappings. This input is used immediately and isn't saved or sent anywhere.</li>
+      <li>If you use <em>Set Up Buttons</em> or <em>Match…</em> for a controller, the app saves that controller's button layout, its name and its model ID (USB vendor and product ID) in the app's own container, so you don't have to set it up again. Nothing else about the controller is saved.</li>
     </ul>
 
     <h3>Permissions</h3>
     <ul>
       <li><strong>Accessibility:</strong> used only to send the keyboard and mouse events your controller mappings produce.</li>
-      <li><strong>USB devices:</strong> used only to read the connected controller's own input reports (battery level and the HOME button), read-only.</li>
+      <li><strong>USB devices:</strong> used only to communicate with connected game controllers: to read their input (buttons, sticks, battery level and the HOME button) and, for some wired controllers macOS has no driver for, to send the start-up commands they need before they report input (for example, turning on the controller's light). Other USB devices aren't used.</li>
     </ul>
 
     <h3>Children</h3>
@@ -89,12 +90,13 @@
       <li>你的设置和键位方案只保存在你的 Mac 上、本 App 自己的容器里，删掉那个文件夹就没有了。</li>
       <li>当你设置按键或开始录制宏时，本 App 只捕获在自身窗口中输入的按键事件。宏录制会记录按下、松开及时间间隔，直到你停止录制。保存的按键映射和宏保存在本机键位方案中，不会发出你的 Mac。</li>
       <li>本 App 读取手柄的输入（按键、摇杆、电量）只是为了执行你设的映射，读到就用，不保存，也不发到任何地方。</li>
+      <li>如果你给某个手柄用了「设置按键」或「匹配」，本 App 会把这个手柄的按键对应、名字和型号编号（USB 厂商号和产品号）保存在本 App 自己的容器里，下次不用重新设置。手柄的其他信息都不保存。</li>
     </ul>
 
     <h3>权限</h3>
     <ul>
       <li><strong>辅助功能：</strong>只用来发送你的手柄映射产生的键盘和鼠标输入。</li>
-      <li><strong>USB 设备：</strong>只用来读取已连接手柄自己的输入报告（电量和 HOME 键），只读。</li>
+      <li><strong>USB 设备：</strong>只用来和已连接的游戏手柄通信：读取它的输入（按键、摇杆、电量和 HOME 键）；对 macOS 没有驱动的部分有线手柄，还会发送它开始上报输入前需要的启动指令（比如点亮手柄上的指示灯）。不使用其他 USB 设备。</li>
     </ul>
 
     <h3>儿童</h3>
