@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pro3 Mapper Support</title>
+<meta name="description" content="Support for Pro3 Mapper, a Mac app that turns your game controller into keyboard and mouse input.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --card: #f5f5f7; --line: #e5e5ea; --accent: #5b4fe0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111016; --fg: #f5f5f7; --muted: #a1a1a6; --card: #1c1b24; --line: #2c2b36; --accent: #9d93ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 20px 72px; }
+  header { display: flex; align-items: center; gap: 20px; }
+  header img { width: 88px; height: 88px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0; }
+  .tagline { color: var(--muted); margin: 4px 0 0; }
+  nav { margin: 24px 0 8px; font-size: 15px; }
+  nav a { margin-right: 18px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .shot { width: 100%; border-radius: 14px; margin: 28px 0 8px; display: block; }
+  h2 { font-size: 26px; margin: 48px 0 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  h3 { font-size: 19px; margin: 28px 0 6px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .card { background: var(--card); border-radius: 14px; padding: 18px 22px; margin: 20px 0; }
+  .muted { color: var(--muted); font-size: 15px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Pro3 Mapper</h1>
+      <p class="tagline">Gamepad to keys for your Mac</p>
+    </div>
+  </header>
+  <nav><a href="#en">English</a><a href="#zh">中文</a><a href="privacy.html">Privacy Policy / 隐私政策</a></nav>
+
+  <img class="shot" src="screenshot.jpg" alt="Pro3 Mapper settings window with a 3D model of the controller">
+
+  <section id="en" lang="en">
+    <h2>Support</h2>
+    <p>Pro3 Mapper turns your game controller into keyboard and mouse input, so you can play games that don't support controllers. It's made for the controller with two back paddles (PL / PR), L4 / R4 buttons under the shoulders and an S / D / X mode switch on the back.</p>
+
+    <div class="card">
+      <strong>Contact:</strong> <a href="mailto:weiyixin9512@gmail.com">weiyixin9512@gmail.com</a><br>
+      <span class="muted">Please include your macOS version, the app version (select Pro3 Mapper in Finder's Applications folder and choose File › Get Info) and which mode switch position (S / D / X) you use.</span>
+    </div>
+
+    <h3>Getting started</h3>
+    <ol>
+      <li>Connect the controller over Bluetooth. D mode is recommended: every button works except Capture.</li>
+      <li>Open Pro3 Mapper. Click <em>Open System Settings…</em> at the top of the settings window and turn Pro3 Mapper on under Privacy &amp; Security › Accessibility.</li>
+      <li>Click a button on the 3D model, or just press it on the controller, then press a keyboard key.</li>
+      <li>Close the settings window. Mapping runs from the menu bar, where you can also turn it off or switch profiles.</li>
+    </ol>
+
+    <h3>Buttons don't send any keys</h3>
+    <ul>
+      <li>Make sure Pro3 Mapper is turned on in System Settings › Privacy &amp; Security › Accessibility. If it already is, quit and reopen the app.</li>
+      <li>Mapping pauses while the settings window is in front. Close it or switch to your game.</li>
+      <li>Check that <em>Enable Mapping</em> is ticked in the menu bar menu.</li>
+    </ul>
+
+    <h3>Some buttons say "Unavailable"</h3>
+    <p>The controller reports different buttons in each mode:</p>
+    <ul>
+      <li><strong>D mode (Bluetooth):</strong> everything except Capture. L4 / R4 / PL / PR are detected automatically.</li>
+      <li><strong>S mode:</strong> Capture and HOME work, but the controller doesn't report L4 / R4 / PL / PR.</li>
+      <li><strong>X mode:</strong> not recognized by macOS.</li>
+    </ul>
+    <p>Mappings you set for unavailable buttons are kept and work again in a mode that has them.</p>
+
+    <h3>HOME opens the Games overlay</h3>
+    <p>macOS uses HOME for its Games overlay unless the app in front is allowed to use it. Go to System Settings › Game Controllers › Home Button Overrides › Edit… and add your game.</p>
+
+    <h3>Where are my profiles?</h3>
+    <p>Choose <em>Open Profiles Folder</em> from the menu bar menu. Each profile is a JSON file you can back up or copy to another Mac.</p>
+
+    <h3>A game ignores the controller</h3>
+    <p>Some games, often online games with anti-cheat, ignore simulated keyboard input or don't allow macros. Please follow the rules of the games you play.</p>
+  </section>
+
+  <section id="zh" lang="zh-Hans">
+    <h2>技术支持</h2>
+    <p>Pro3 手柄映射把游戏手柄的按键转成键盘和鼠标输入，让不支持手柄的游戏也能用手柄玩。它是专门为背面有 PL / PR 两个背键、肩键下面有 L4 / R4 小键、背面有 S / D / X 模式开关的那款手柄打造的。</p>
+
+    <div class="card">
+      <strong>联系方式：</strong><a href="mailto:weiyixin9512@gmail.com">weiyixin9512@gmail.com</a><br>
+      <span class="muted">请附上 macOS 版本、App 版本（在 Finder 的「应用程序」里选中本 App，选 文件 →「显示简介」），以及手柄模式开关拨在哪一档（S / D / X）。</span>
+    </div>
+
+    <h3>开始使用</h3>
+    <ol>
+      <li>用蓝牙连接手柄。推荐 D 模式：除了截图键都能用。</li>
+      <li>打开 App，点设置窗口顶部的「打开系统设置…」，在 隐私与安全性 → 辅助功能 里打开本 App。</li>
+      <li>点一下 3D 模型上的键，或者直接按一下实体手柄上的键，再按键盘上的键。</li>
+      <li>关掉设置窗口，映射就在后台工作了。菜单栏里可以开关映射、切换键位方案。</li>
+    </ol>
+
+    <h3>按手柄没有反应</h3>
+    <ul>
+      <li>确认 系统设置 → 隐私与安全性 → 辅助功能 里已经打开本 App；已经打开的话，退出 App 再重新打开。</li>
+      <li>设置窗口在前台时映射会暂停，关掉它或者切到游戏。</li>
+      <li>确认菜单栏菜单里「启用映射」是勾上的。</li>
+    </ul>
+
+    <h3>有的键显示「不可用」</h3>
+    <p>手柄在不同模式下上报的键不一样：</p>
+    <ul>
+      <li><strong>D 模式（蓝牙）：</strong>除了截图键都能用，L4 / R4 / PL / PR 自动识别。</li>
+      <li><strong>S 模式：</strong>截图键、HOME 能用，但手柄不上报 L4 / R4 / PL / PR。</li>
+      <li><strong>X 模式：</strong>macOS 不认。</li>
+    </ul>
+    <p>给不可用的键设的映射会保留，换到有这些键的模式后照常生效。</p>
+
+    <h3>按 HOME 会打开「游戏」叠层</h3>
+    <p>macOS 默认把 HOME 用来打开「游戏」叠层，除非前台的程序被允许使用它。到 系统设置 →「游戏控制器」→「主屏幕按钮覆盖」→「编辑…」，把你的游戏加进去。</p>
+
+    <h3>键位方案存在哪里？</h3>
+    <p>菜单栏菜单里选「打开方案文件夹」。每个方案是一个 JSON 文件，可以备份，也可以拷到另一台 Mac 上用。</p>
+
+    <h3>游戏不认手柄的按键</h3>
+    <p>有些游戏（多半是带反作弊的网络游戏）会忽略模拟的键盘输入，或者不允许使用宏。请遵守所玩游戏的规则。</p>
+  </section>
+
+  <footer>© 2026 XIAOYAN PANG · <a href="privacy.html">Privacy Policy / 隐私政策</a></footer>
+</main>
+</body>
+</html>
