@@ -46,7 +46,7 @@ WASD, arrow keys, mouse or scroll wheel, with adjustable speed and threshold.
 - Key repeat that behaves like a real keyboard
 - Profiles for different games, switchable from the menu bar
 - Knows the controller's modes: D mode (recommended) has every button except Capture; S mode has Capture and HOME but no L4 / R4 / PL / PR; X mode isn't supported yet
-- Other controllers: those macOS recognizes work with their standard buttons. From version 1.1, wired Xbox One / Series, Xbox 360 and PS3 controllers and many other gamepads work too, and Match… fixes any button that lines up wrong
+- Other controllers: those macOS recognizes work with their standard buttons. Wired Xbox One / Series, Xbox 360 and PS3 controllers and many other gamepads work too, and Match… fixes any button that lines up wrong
 - No data collected, no network connections
 - English and Simplified Chinese · macOS 13 or later
 
@@ -84,6 +84,6 @@ WASD、方向键、鼠标或滚轮，速度和灵敏度都能调。
 - 长按连发和真键盘一样
 - 不同游戏用不同的键位方案，在菜单栏里就能切换
 - 认得手柄的连接模式：D 模式（推荐）除了截图键都能用；S 模式截图键、HOME 能用，但没有 L4 / R4 / PL / PR；X 模式暂不支持
-- 其他手柄：macOS 认得的都能用，支持标准按键。1.1 版起，有线 Xbox One / Series、Xbox 360、PS3 手柄和很多其他手柄也能用，按键对不上的可以用「匹配」改
+- 其他手柄：macOS 认得的都能用，支持标准按键；有线 Xbox One / Series、Xbox 360、PS3 手柄和很多其他手柄也能用，按键对不上的可以用「匹配」改
 - 不收集任何数据，不联网
 - 中文、英文界面 · macOS 13 及以上
